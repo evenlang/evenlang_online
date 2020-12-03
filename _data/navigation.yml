@@ -1,0 +1,6 @@
+- name: Главная
+  link: /scientific
+- name: О нас
+  link: /scientific/about.html
+- name: Posts
+  link: /blog.html
