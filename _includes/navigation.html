@@ -7,30 +7,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
          <ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-              <a class="nav-link" href="#">{{ page.title }}<span class="sr-only">(current)</span></a>
-            </li>
+      {% assign titles = "Главная~/scientific, Тексты~/scientific/texts, Глоссы~/scientific/glosses, Наши статьи~/scientific/articles, Литература~/scientific/biblio, Поле~/scientific/field, О нас~/scientific/about" | split: ", " %}
+			{% for title in titles %}
+      {% assign tit = title | split: "~" %}
+      {% if tit[0] == page.title %}
 			<li class="nav-item">
-              <a class="nav-link" href="/scientific">Главная</a>
+              <a class="nav-link" href="#">{{ tit[0] }}</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/scientific/texts">Тексты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/scientific/glosses">Глоссы</a>
-			</li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/articles">Наши статьи</a>
-			</li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/biblio">Литература</a>
-            </li>
+      {% else %}
       <li class="nav-item">
-              <a class="nav-link" href="/scientific/field">Поле</a>
+              <a class="nav-link" href={{ tit[1] }}>{{ tit[0] }}</a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/about">О нас</a>
-            </li>
+      {% endif %}
+      {% endfor %}
           </ul>
           <form class="form-inline mt-2 mt-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Поиск">
