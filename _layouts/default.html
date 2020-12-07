@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
 
     <!-- Bootstrap core CSS -->
-    <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
-	<link href="/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="{{'/bootstrap/bootstrap.min.css' | relative_url}}" rel="stylesheet">
+	<link href="{{'/bootstrap/bootstrap.css' | relative_url}}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/bootstrap/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="/bootstrap/carousel.css" rel="stylesheet">
+    <link href="{{'/bootstrap/sticky-footer-navbar.css' | relative_url}}" rel="stylesheet">
+    <link href="{{'/bootstrap/carousel.css' | relative_url}}" rel="stylesheet">
   </head>
   <body>
   	{% include navigation.html %}
@@ -25,12 +25,11 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/bootstrap/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/bootstrap/jquery-slim.min.js"><\/script>')</script>
-    <script src="/bootstrap/popper.min.js"></script>
-    <script src="/bootstrap/bootstrap.min.js"></script>
-    <script src="/bootstrap/bootstrap.js"></script>
-
+    <script src="{{'/bootstrap/jquery-3.2.1.slim.min.js' | relative_url}}" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('{{<script src="/bootstrap/jquery-slim.min.js | relative_url}}"><\/script>')</script>
+    <script src="{{'/bootstrap/popper.min.js' | relative_url}}"></script>
+    <script src="{{'/bootstrap/bootstrap.min.js' | relative_url}}"></script>
+    <script src="{{'/bootstrap/bootstrap.js' | relative_url}}"></script>
 
     <footer class="footer">
       <div class="container">
