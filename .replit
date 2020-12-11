@@ -1,0 +1,3 @@
+language="ruby"
+run="bundle config set path '~/bundle_data' && bundle exec jekyll serve --port 8080 --host 0.0.0.0"
+onBoot="mkdir -p ~/bundle_data && bundle config set path '~/bundle_data' && bundle install"
