@@ -31,7 +31,7 @@ plugins:
 pagination:
   enabled: true
   per_page: 3
-  title_suffix: ' - page :num'
+  title: ' - page :num'
   limit: 0
 
 
