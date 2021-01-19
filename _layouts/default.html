@@ -26,13 +26,14 @@
     {{ content }}
         <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/bootstrap/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/bootstrap/jquery-slim.min.js"><\/script>')</script>
-    <script src="/bootstrap/popper.min.js"></script>
-    <script src="/bootstrap/bootstrap.min.js"></script>
-    <script src="/bootstrap/bootstrap.js"></script>
-
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="{{'/bootstrap/jquery-3.2.1.slim.min.js' | relative_url}}"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write(<script src="{{'/bootstrap/jquery-slim.min.js' | relative_url}}"></script>)</script>
+  <script src="{{'/bootstrap/popper.min.js' | relative_url}}"></script>
+  <script src="{{'/bootstrap/bootstrap.min.js' | relative_url}}"></script>
+  <script src="{{'/bootstrap/bootstrap.js' | relative_url}}"></script>
 
     <footer class="footer">
       <div class="container">
