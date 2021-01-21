@@ -16,7 +16,7 @@ pagination:
     {% for post in paginator.posts %}
   <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
   <p class="author">
-    <span class="date" style="margin-left: 2rem">{{ post.date }}</span>
+    <span class="date" style="margin-left: 2rem">{{ page.date | date: "%d.%m.%Y" }}</span>
   </p>
 		<div class="row">
         {{ post.content }}
