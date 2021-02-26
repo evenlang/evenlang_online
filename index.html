@@ -1,7 +1,13 @@
+---
+title: Welcome
+layout: None
+---
+
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
+    <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,7 +35,7 @@
 
   <body class="text-center">
     {% if page.url == "/404.html" %}
-    	<meta http-equiv="refresh" content="5; url=/404.html">
+    	<meta http-equiv="refresh" content="url=/404.html">
 	  {% endif %}
     
     <div class='opacity'></div>
