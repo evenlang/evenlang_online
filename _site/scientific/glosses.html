@@ -22,6 +22,8 @@
     <meta name="author" content="">
 
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+	  
+	<link rel="icon" href="/static/img/icon.png">
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -41,45 +43,115 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
          <ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-              <a class="nav-link" href="#">Глоссы<span class="sr-only">(current)</span></a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific">Главная</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/scientific/texts">Тексты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/scientific/glosses">Глоссы</a>
-			</li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/articles">Наши статьи</a>
-			</li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/biblio">Литература</a>
-            </li>
+      
+			
+      
+      
       <li class="nav-item">
-              <a class="nav-link" href="/scientific/field">Поле</a>
+              <a class="nav-link" href=/scientific>Главная</a>
             </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/texts>Тексты</a>
+            </li>
+      
+      
+      
+      
 			<li class="nav-item">
-              <a class="nav-link" href="/scientific/about">О нас</a>
+              <a class="nav-link" href="#">Глоссы</a>
             </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/articles>Публикации</a>
+            </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/biblio>Литература</a>
+            </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/field>Поле</a>
+            </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/about>О нас</a>
+            </li>
+      
+      
           </ul>
-          <form class="form-inline mt-2 mt-lg-0">
+          <!-- <form class="form-inline mt-2 mt-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Поиск">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
-          </form>
+          </form> -->
         </div>
       </nav>
     </header>
+
         <!-- Begin page content -->
     <main role="main" class="container">
       <h1 class="mt-5">Список глосс</h1>
       <p class="lead">Тут находится список глосс, которые присутствуют в текстах.</p>
-	  <a href="docs/eve_glosses.pdf" download="">Открыть в новой вкладке</a></li>
+	  <a href="../static/files/eve_draft_glosses_20200229.pdf" target="_blank">Открыть в новой вкладке</a>
     </main>
 
+<div class="container">
+<h2>1. Существительное</h2>
+  <p>Порядок показателей: основа-AL-NUM-CASE-POSS</p>
+  <h3>1.1 Число</h3>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th></th>
+        <th>V/C</th>
+        <th>n</th>
+	<th>Непродуктивные (kinship & Сo)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PL</td>
+        <td>-l</td>
+        <td>-r</td>
+	<td>-sal, -tal, -nil/-ŋil, -tyl, -ral</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3>1.2 Падежи</h3>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th></th>
+        <th>V/C</th>
+        <th>n</th>
+	<th>PL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>NOM</td>
+        <td></td>
+        <td>-∅</td>
+	<td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <div class="container">
 <h2>4. Глагол</h2>
   <p>Глагольная словоформа: √-деривации-залог-вид-время/наклонение-лицо&число </p>
@@ -110,15 +182,77 @@
     </tbody>
   </table>
 </div>
+<div class="container">
+<h2>4. Глагол</h2>
+  <p>Глагольная словоформа: √-деривации-залог-вид-время/наклонение-лицо&число </p>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Глосса</th>
+        <th>Алломорфы</th>
+        <th>Примеры</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AD</td>
+        <td>-w, -u, -m</td>
+        <td>адверсатив-пассив: i-dej ‘войти’ → i-w-dej ‘внести’ → i-wu-w-dej ‘быть внесенным’</td>
+      </tr>
+      <tr>
+        <td>MED</td>
+        <td>-b, -p</td>
+        <td>медиопассив: aŋa-daj ‘открыть’ → aŋa-b-daj ‘открыться’ </td>
+      </tr>
+      <tr>
+        <td>CAUS</td>
+        <td>-w.kan</td>
+        <td>каузатив: ma-daj ‘убить’ → ma-wkan-daj ‘заставить убить’</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container">
+<h2>4. Глагол</h2>
+  <p>Глагольная словоформа: √-деривации-залог-вид-время/наклонение-лицо&число </p>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Глосса</th>
+        <th>Алломорфы</th>
+        <th>Примеры</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AD</td>
+        <td>-w, -u, -m</td>
+        <td>адверсатив-пассив: i-dej ‘войти’ → i-w-dej ‘внести’ → i-wu-w-dej ‘быть внесенным’</td>
+      </tr>
+      <tr>
+        <td>MED</td>
+        <td>-b, -p</td>
+        <td>медиопассив: aŋa-daj ‘открыть’ → aŋa-b-daj ‘открыться’ </td>
+      </tr>
+      <tr>
+        <td>CAUS</td>
+        <td>-w.kan</td>
+        <td>каузатив: ma-daj ‘убить’ → ma-wkan-daj ‘заставить убить’</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
         <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/bootstrap/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/bootstrap/jquery-slim.min.js"><\/script>')</script>
-    <script src="/bootstrap/popper.min.js"></script>
-    <script src="/bootstrap/bootstrap.min.js"></script>
-    <script src="/bootstrap/bootstrap.js"></script>
-
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/bootstrap/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write(<script src="/bootstrap/jquery-slim.min.js"></script></script>
+  <script src="/bootstrap/popper.min.js"></script>
+  <script src="/bootstrap/bootstrap.min.js"></script>
+  <script src="/bootstrap/bootstrap.js"></script>
 
     <footer class="footer">
       <div class="container">

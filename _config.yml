@@ -1,3 +1,5 @@
+source: app
+
 collections:
   authors:
     output: true
