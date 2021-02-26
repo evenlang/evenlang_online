@@ -28,6 +28,9 @@
   </head>
 
   <body class="text-center">
+    {% if page.url == "/404.html" %}
+    	<meta http-equiv="refresh" content="5; url=/404.html">
+	  {% endif %}
     
     <div class='opacity'></div>
 
