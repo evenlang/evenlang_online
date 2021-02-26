@@ -1,0 +1,7 @@
+jekyll:
+        image: jekyll/jekyll
+        command: jekyll serve
+        ports:
+                - 80:4000
+        volumes:
+                - .:/srv/jekyll
