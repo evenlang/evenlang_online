@@ -1,3 +1,76 @@
-.current { color: green; }
+@font-face {
+  font-family: SourceSerifPro-Bold;
+  src: url(/static/fonts/SourceSerifPro-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: SourceSerifPro-Semibold;
+  src: url(/static/fonts/SourceSerifPro-Semibold.ttf) format("truetype");
+}
+@font-face {
+  font-family: SourceSerifPro-Regular;
+  src: url(/static/fonts/SourceSerifPro-Regular.ttf) format("truetype");
+}
+.mt5 {
+  font-family: SourceSerifPro-Regular;
+}
+.navbar {
+  background-color: #10bbc4 !important;
+  font-family: SourceSerifPro-Bold;
+}
+.nav-link {
+	color: white !important;
+}
+.container{
+	width: 80%;
+	text-align: justify;
+}
+.image-cropper {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
 
-/*# sourceMappingURL=styles.css.map */
+#right
+{
+    position: absolute; /*or fixed*/
+    right: 10%;
+    margin-top: 2%;
+}
+#left
+{
+    position: absolute; /*or fixed*/
+    left: 10%;
+    margin-top: 2%;
+}
+.carousel {
+	width: 70%;
+	margin: auto;
+}
+p {
+	margin-top: 4%;
+	margin-bottom: 2%;
+}
+h1 {
+	margin-top: 5%;
+	margin-bottom: -1%;
+  font-family: SourceSerifPro-Semibold;
+  color: #282828;
+}
+h3 {
+  font-family: SourceSerifPro-Regular;
+}
+.date {
+  color: #616160;
+}
+.preview {
+  color: #282828;
+}

@@ -22,6 +22,8 @@
     <meta name="author" content="">
 
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+	  
+	<link rel="icon" href="/static/img/icon.png">
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/bootstrap.min.css" rel="stylesheet">
@@ -30,53 +32,158 @@
     <!-- Custom styles for this template -->
     <link href="/bootstrap/sticky-footer-navbar.css" rel="stylesheet">
     <link href="/bootstrap/carousel.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+    <style type="text/css">
+  </style>
   </head>
   <body>
   	<header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="/">Evenlang</a>
+        <a href="/" style="margin-left: 15pt;">
+          <img src="/static/img/logo.png" width="60%">
+        </a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
          <ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-              <a class="nav-link" href="#">Поле<span class="sr-only">(current)</span></a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific">Главная</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/scientific/texts">Тексты</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/scientific/glosses">Глоссы</a>
-			</li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/articles">Наши статьи</a>
-			</li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/biblio">Литература</a>
-            </li>
+      
+			
+      
+      
       <li class="nav-item">
-              <a class="nav-link" href="/scientific/field">Поле</a>
+              <a class="nav-link" href=/scientific>главная</a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link" href="/scientific/about">О нас</a>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/field>поле</a>
             </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/about>о нас</a>
+            </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/texts>тексты</a>
+            </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/materials>материалы</a>
+            </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=/scientific/articles>публикации</a>
+            </li>
+      
+      
+      
+      
+      <li class="nav-item">
+              <a class="nav-link" href=> </a>
+            </li>
+      
+      
           </ul>
-          <form class="form-inline mt-2 mt-lg-0">
+          <!-- <form class="form-inline mt-2 mt-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Поиск">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
-          </form>
+          </form> -->
         </div>
       </nav>
     </header>
-        <!-- Begin page content -->
+
+          <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">О поле</h1>
-      <p class="lead">Тут находится инфа о быстринском районе (+ хочу карту?), пара фотографий, благодарность информантам (их список!).</p>
+      <h1 class="mt-5">Быстринский район</h1>
+      <div class="lead">
+        <p>
+          Быстринский район расположен в центральной части Камчатки. Он был образован в 1932 году как национальный эвенский район с административным центром в селе Анавгай. Сейчас центром района является более крупное село Эссо, которое в последнее время становится привлекательным направлением для многочисленных туристов, желающих познакомиться с красотами Камчатки.
+        </p>
+        <div align="center">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09fc7451560de51eebee1681b46e97a88ec9bad160032328f29d60a8591b93d3&amp;width=844&amp;height=554&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        
+        <p>
+          В районе развито национальное верховое оленеводство и сельское хозяйство, которые и являются основными источниками дохода местных жителей. Несмотря на то, что Быстринский район не имеет выхода к морю, на его территории протекает несколько крупных рек, поэтому рыболовство тоже является традиционным занятием местных. Этому промыслу даже посвящено особое торжество – праздник первой рыбы, который ежегодно проводится в первых числах июня.
+        </p>
+
+      </div>
+      <h1>Эссо</h1>
+      <div class="lead">
+        <p>
+          Через Эссо протекает река Уксичан. Она разделяет село на две части, соединённых несколькими мостами. На одном из берегов располагается Быстринский этнографический музей, в котором собраны предметы традиционного быта разных народов, проживающих на этой земле. Помимо музея, гости Эссо могут посетить визит-центр, где можно узнать много нового о достопримечательностях эвенской земли.
+        </p>
+      </div>
+      <!-- Bootstrap 4 -->
+      <div id="carousel_1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="/static/img/esso/10.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="/static/img/esso/14.jpg">
+          </div>
+          <div class="carousel-item">
+             <img class="img-fluid" src="/static/img/esso/15.jpg">
+          </div>
+        </div>
+        <!-- Элементы управления -->
+        <a class="carousel-control-prev" href="#carousel_1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel_1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующий</span>
+        </a>
+      </div>
+      
+      <h1>Анавгай</h1>
+      <div class="lead">
+        <p>
+          Село Анавгай знаменито термальными источниками. Некоторые из них используются для центрального отопления, другие были преобразованы в горячие бассейны. Неподалёку от Анавгая располагается национальное стойбище “Мэнэдек” <ссылка на мэнэдэк?> – культурная жемчужина района. Здесь можно прикоснуться к быту и культуре эвенов, проживающих на этой территории уже много поколений. 
+        </p>
+      </div>
+        <!-- Bootstrap 4 -->
+      <div id="carousel_2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid" src="...">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid" src="...">
+          </div>
+          <div class="carousel-item">
+             <img class="img-fluid" src="...">
+          </div>
+        </div>
+        <!-- Элементы управления -->
+        <a class="carousel-control-prev" href="#carousel_2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel_2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Следующий</span>
+        </a>
+      </div>
+
     </main>
 	
     <footer class="footer">
@@ -95,15 +202,17 @@
 	<script src="bootstrap/bootstrap.js"></script>
   </body>
 </html>
+    
         <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/bootstrap/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/bootstrap/jquery-slim.min.js"><\/script>')</script>
-    <script src="/bootstrap/popper.min.js"></script>
-    <script src="/bootstrap/bootstrap.min.js"></script>
-    <script src="/bootstrap/bootstrap.js"></script>
-
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="/bootstrap/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write(<script src="/bootstrap/jquery-slim.min.js"></script></script>
+  <script src="/bootstrap/popper.min.js"></script>
+  <script src="/bootstrap/bootstrap.min.js"></script>
+  <script src="/bootstrap/bootstrap.js"></script>
 
     <footer class="footer">
       <div class="container">

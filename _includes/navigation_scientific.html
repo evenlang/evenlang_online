@@ -1,0 +1,32 @@
+<header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <a href="/" style="margin-left: 15pt;">
+          <img src="/static/img/logo.png" width="60%">
+        </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+         <ul class="navbar-nav mr-auto">
+      {% assign titles = "главная~/scientific, поле~/scientific/field, о нас~/scientific/about, тексты~/scientific/texts, материалы~/scientific/materials, публикации~/scientific/articles,  " | split: ", " %}
+			{% for title in titles %}
+      {% assign tit = title | split: "~" %}
+      {% if tit[0] == page.title %}
+			<li class="nav-item">
+              <a class="nav-link" href="#">{{ tit[0] }}</a>
+            </li>
+      {% else %}
+      <li class="nav-item">
+              <a class="nav-link" href={{ tit[1] }}>{{ tit[0] }}</a>
+            </li>
+      {% endif %}
+      {% endfor %}
+          </ul>
+          <!-- <form class="form-inline mt-2 mt-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+          </form> -->
+        </div>
+      </nav>
+    </header>
