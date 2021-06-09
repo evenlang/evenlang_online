@@ -1,0 +1,141 @@
+---
+layout: default
+title: Галерея
+---
+    <!-- Begin page content -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фотографии из наших экспедиций</title>
+    <!-- Bootstrap CSS -->
+    <link href="/examples/vendors/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fancyBox CSS -->
+    <link href="/examples/vendors/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <style>
+        .mosaicflow__item {
+            padding: 3px;
+        }
+
+        .mosaicflow__column {
+            float: left;
+        }
+
+        .mosaicflow__item img {
+            display: block;
+            width: 100%;
+            height: auto;
+            padding: 0px;
+            background-color: #fff;
+            border: 0px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .mosaicflow__item img:hover {
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="h3">Галерея</h1>
+    <div id="mycontainer">
+
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/ignatenko_darya.png">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/ignatenko_darya.png" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/ignatenko_darya.png">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/ignatenko_darya.png" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/ignatenko_darya.png">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/ignatenko_darya.png" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/ignatenko_darya.png">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/ignatenko_darya.png" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/ignatenko_darya.png">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/ignatenko_darya.png" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/ignatenko_darya.png">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/ignatenko_darya.png" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+        <div class="mosaicflow__item">
+            <a data-fancybox="gallery" href="../static/img/our_portraits_sq/vinyar_alexey.jpeg">
+                <img class="img-responsive" src="../static/img/our_portraits_sq/vinyar_alexey.jpeg" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="/examples/vendors/jquery/jquery-1.12.4.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="/examples/vendors/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<!-- fancyBox JS -->
+<script src="/examples/vendors/fancybox/jquery.fancybox.min.js"></script>
+<!-- Mosiac Flow -->
+<script src="/examples/vendors/mosaicflow/jquery.mosaicflow.js"></script>
+<script>
+    $(function () {
+        $('#mycontainer').mosaicflow({
+            itemSelector: '.mosaicflow__item',
+            minItemWidth: 300
+        });
+    });
+</script>
+
+</body>
+</html>
