@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Главная
+title: Главная1
 pagination: 
-  enabled: true
+enabled: true
 ---
 
   <main role="main" class="container">
@@ -16,7 +16,7 @@ pagination:
     {% if thecycle == 'odd' %}
     <div style="margin-top: -5%;margin-bottom: 12%;">
 
-      <div class="image-cropper" id="right">
+      <div class="image-cropper d-none d-md-block" id="right">
         <img src={{ post.ava }} class="profile-pic">
       </div>
 
@@ -34,7 +34,7 @@ pagination:
     {% else %}
     <div style="margin-top: -5%;margin-bottom: 12%">
 
-      <div class="image-cropper" id="left">
+      <div class="image-cropper d-none d-md-block" id="left">
         <img src={{ post.ava }} class="profile-pic">
       </div>
 
