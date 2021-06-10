@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Welcome0
 layout: None
 ---
   <head>
@@ -19,14 +19,25 @@ layout: None
     <link rel="icon" href="/static/img/icon.png">
 
     <style>
-      body {background-image: url(/static/img/14.jpg);
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center;}
-      
-      .opacity {background-color: #10bbc4;
-        background-size: 100% 100%;
-        opacity: 0.6;}      
+      body {
+      background: none;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @media (min-width: 640px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .container {
+      background: #fff;
+    }
+    html {
+      background: url(/static/img/14.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }   
     </style>
   </head>
 
