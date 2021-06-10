@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Главная5
+title: Главная6
 pagination: 
   enabled: true
 ---
@@ -16,8 +16,8 @@ pagination:
     {% if thecycle == 'odd' %}
     <div style="margin-top: -5%;margin-bottom: 12%;">
 
-      <div class="image-cropper d-none d-md-block" id="right">
-        <img src={{ post.ava }} class="profile-pic">
+      <div class="image-cropper" id="right">
+        <img src={{ post.ava }} class="profile-pic d-none d-md-block">
       </div>
 
       <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
@@ -34,8 +34,8 @@ pagination:
     {% else %}
     <div style="margin-top: -5%;margin-bottom: 12%">
 
-      <div class="image-cropper d-none d-md-block" id="left">
-        <img src={{ post.ava }} class="profile-pic">
+      <div class="image-cropper" id="left">
+        <img src={{ post.ava }} class="profile-pic d-none d-md-block">
       </div>
 
       <h3 align="right"><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
