@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Главная9
+title: Главная10
 pagination: 
   enabled: true
 ---
@@ -14,7 +14,6 @@ pagination:
     {% for post in paginator.posts reversed %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
-    <div style="margin-top: -50%;margin-bottom: 12%;">
 
       <div class="image-cropper" id="right">
         <img src={{ post.ava }} class="profile-pic d-none d-sm-block">
@@ -26,13 +25,12 @@ pagination:
         {{ post.author }} &mdash; {{ post.date | date: "%d.%m.%Y" }}
       </div>
 
-  		<div class="preview" style="width: 78%; height: 50pt">
+      <div class="preview" style="width: 78%; height: 50pt">
           {{ post.lead }}
       </div>
-    </div>
+
     <hr class="featurette-divider">
     {% else %}
-    <div style="margin-top: -5%;margin-bottom: 12%">
 
       <div class="image-cropper" id="left">
         <img src={{ post.ava }} class="profile-pic d-none d-sm-block">
@@ -47,11 +45,11 @@ pagination:
       <div class="preview" style="width: 78%; height: 50pt; margin-left: 22%">
           {{ post.lead }}
       </div>
-    </div>
+
     <hr class="featurette-divider">
     {% endif %}
     {% endfor %}
-	</div>
+  </div>
 
 <!-- Pagination links -->
 <div class="container">
