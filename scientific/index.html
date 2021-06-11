@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Главная8
+title: Главная9
 pagination: 
   enabled: true
 ---
@@ -14,7 +14,7 @@ pagination:
     {% for post in paginator.posts reversed %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
-    <div style="margin-top: -5%;margin-bottom: 12%;">
+    <div style="margin-top: -50%;margin-bottom: 12%;">
 
       <div class="image-cropper" id="right">
         <img src={{ post.ava }} class="profile-pic d-none d-sm-block">
