@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Поле22
+title: Поле23
 ---
 <style>
   .carousel-inner img {
@@ -16,32 +16,25 @@ title: Поле22
         <p>
           Быстринский район расположен в центральной части Камчатки. Он был образован в 1932 году как национальный эвенский район с административным центром в селе Анавгай. Сейчас центром района является более крупное село Эссо, которое в последнее время становится привлекательным направлением для многочисленных туристов, желающих познакомиться с красотами Камчатки.
         </p>
-      <div class="row-fluid">
-	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09fc7451560de51eebee1681b46e97a88ec9bad160032328f29d60a8591b93d3&amp;width=844&amp;height=554&amp;lang=ru_RU&amp;scroll=true"></script>
-
-	
-	<script type="text/javascript">
-		ymaps.ready(function () {
-			var MainMap = new ymaps.Map("MainMap", {
-	
-				center: [55.76, 37.64],
-				zoom: 10,
-				type: "yandex#map"
-	
-			});
-			MainMap.controls.add("typeSelector").add("zoomControl");
-			
-						
-		});
-	</script>
-	
-	<div id="MainMap" style="width:100%;height:400px;"></div>
-      </div>
-    
             <div align="center">
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09fc7451560de51eebee1681b46e97a88ec9bad160032328f29d60a8591b93d3&amp;width=844&amp;height=554&amp;lang=ru_RU&amp;scroll=true"></script>
             </div>
       </div>
+<div class="row-fluid">
+<script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+<div id="map" style="width: 100%; height: 200px"></div>
+<script type="text/javascript">
+    ymaps.ready(init);
+    var myMap;
+
+    function init(){     
+        myMap = new ymaps.Map ("map", {
+            center: [55.76, 37.64],
+            zoom: 10,
+        });
+    }
+</script>
+</div>
       <div class="lead">
         <p>
           В районе развито национальное верховое оленеводство и сельское хозяйство, которые и являются основными источниками дохода местных жителей. Несмотря на то, что Быстринский район не имеет выхода к морю, на его территории протекает несколько крупных рек, поэтому рыболовство тоже является традиционным занятием местных. Этому промыслу даже посвящено особое торжество – праздник первой рыбы, который ежегодно проводится в первых числах июня.
@@ -57,15 +50,15 @@ title: Поле22
     </main>
   
       <!-- Bootstrap 4 -->
-      <div id="carousel_1" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner w-100 img-fluid">
-          <div class="carousel-item active w-100 img-fluid">
+      <div id="carousel_1" class="carousel slide h-auto" data-ride="carousel">
+        <div class="carousel-inner w-100 h-auto img-fluid">
+          <div class="carousel-item active w-100 h-auto img-fluid">
             <img class="d-block h-auto img-fluid" src="/static/img/esso/10.jpg">
           </div>
-          <div class="carousel-item w-100 img-fluid">
+          <div class="carousel-item w-100 h-auto img-fluid">
             <img class="d-block h-auto img-fluid" src="/static/img/esso/14.jpg">
           </div>
-          <div class="carousel-item w-100 img-fluid">
+          <div class="carousel-item w-100 h-auto img-fluid">
              <img class="d-block h-auto img-fluid" src="/static/img/esso/15.jpg">
           </div>
         </div>
