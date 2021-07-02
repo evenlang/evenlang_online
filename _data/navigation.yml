@@ -1,5 +1,5 @@
 - name: Главная
-  link: /scientific
+  link: /scientific/main
 - name: О нас
   link: /scientific/about.html
 - name: Posts
