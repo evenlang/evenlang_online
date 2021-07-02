@@ -7,13 +7,6 @@ layout: default
   <p>
     {{ page.date | date: "%d.%m.%Y" }}
   </p>
-  <p>
-    {% assign author = site.authors | where: 'short_name', page.author | first %}
-    {% if author %}
-      <a href="{{ author.url }}">{{ author.name }}</a>
-    {% endif %}
-  </p>
-
   {{ content }}
 </main>
 

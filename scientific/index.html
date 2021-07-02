@@ -16,7 +16,9 @@ pagination:
     {% if thecycle == 'odd' %}
     <div class="row">
       <div class="col-lg-3 d-none d-lg-block">
-        <img class="rounded-circle" src="{{ post.ava }}" alt="post.ava" width="140" height="140">
+        <div class="image-cropper" id="right">
+          <img src={{ post.ava }} class="profile-pic">
+        </div>
       </div>
       <div class="col">
       <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
@@ -38,7 +40,7 @@ pagination:
       <div class="col">
         <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
 
-        <div class="date" align="right">
+        <div class="date">
           {{ post.date | date: "%d.%m.%Y" }}
         </div>
 
@@ -47,7 +49,9 @@ pagination:
         </div>
       </div>
       <div class="col-lg-3 d-none d-lg-block">
-        <img class="rounded-circle" src="{{ post.ava }}" alt="post.ava" width="140" height="140">
+        <div class="image-cropper" id="right">
+          <img src={{ post.ava }} class="profile-pic">
+        </div>
       </div>
     </div>
 

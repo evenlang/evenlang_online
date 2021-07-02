@@ -33,7 +33,7 @@ plugins:
 pagination:
   enabled: true
   per_page: 3
-  title: ' - page :num'
+  title: 'Главная'
   limit: 0
 
 
