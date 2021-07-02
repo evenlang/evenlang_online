@@ -1,0 +1,66 @@
+---
+layout: default
+title: Главная
+pagination: 
+  enabled: true
+---
+
+  <main role="main" class="container">
+    <h1 class="mt-5">Новости</h1>
+  </main>
+  <div class="container">
+    <hr class="featurette-divider">
+    {% assign i = 1 %}
+    {% for post in paginator.posts reversed %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="row">
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="image-cropper" id="right">
+          <img src={{ post.ava }} class="profile-pic">
+        </div>
+      </div>
+      <div class="col">
+      <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
+
+      <div class="date">
+        {{ post.date | date: "%d.%m.%Y" }}
+      </div>
+
+      <div class="preview">
+          {{ post.lead }}
+      </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    {% else %}
+
+    <div class="row">
+      <div class="col">
+        <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
+
+        <div class="date">
+          {{ post.date | date: "%d.%m.%Y" }}
+        </div>
+
+        <div class="preview">
+          {{ post.lead }}
+        </div>
+      </div>
+      <div class="col-lg-3 d-none d-lg-block">
+        <div class="image-cropper" id="right">
+          <img src={{ post.ava }} class="profile-pic">
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    {% endif %}
+    {% endfor %}
+  </div>
+
+<!-- Pagination links -->
+<div class="container">
+  {% include pagination.html %}
+</div>
