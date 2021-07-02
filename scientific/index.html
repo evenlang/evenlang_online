@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Главная
+title: Главная15
 pagination: 
   enabled: true
 ---
@@ -8,50 +8,52 @@ pagination:
   <main role="main" class="container">
     <h1 class="mt-5">Новости</h1>
   </main>
-  <div class="container" style="margin-top: -70pt">
+  <div class="container">
     <hr class="featurette-divider">
     {% assign i = 1 %}
     {% for post in paginator.posts reversed %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
-    <div style="margin-top: -5%;margin-bottom: 12%;">
-
-      <div class="image-cropper" id="right">
-        <img src={{ post.ava }} class="profile-pic">
+    <div class="row">
+      <div class="col-lg-3">
+        <img class="rounded-circle" src="{{ post.ava }}" alt="post.ava" width="140" height="140">
       </div>
-
+      <div class="col">
       <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
 
       <div class="date">
         {{ post.author }} &mdash; {{ post.date | date: "%d.%m.%Y" }}
       </div>
 
-  		<div class="preview" style="width: 78%; height: 50pt">
+      <div class="preview">
           {{ post.lead }}
       </div>
-    </div>
+      </div>
+
     <hr class="featurette-divider">
     {% else %}
-    <div style="margin-top: -5%;margin-bottom: 12%">
 
-      <div class="image-cropper" id="left">
-        <img src={{ post.ava }} class="profile-pic">
-      </div>
+    <div class="row">
+      <div class="col">
+        <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
 
-      <h3 align="right"><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
+        <div class="date" align="right">
+          {{ post.author }} &mdash; {{ post.date | date: "%d.%m.%Y" }}
+        </div>
 
-      <div class="date" align="right">
-        {{ post.author }} &mdash; {{ post.date | date: "%d.%m.%Y" }}
-      </div>
-
-      <div class="preview" style="width: 78%; height: 50pt; margin-left: 22%">
+        <div class="preview">
           {{ post.lead }}
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <img class="rounded-circle" src="{{ post.ava }}" alt="post.ava" width="140" height="140">
       </div>
     </div>
+
     <hr class="featurette-divider">
     {% endif %}
     {% endfor %}
-	</div>
+  </div>
 
 <!-- Pagination links -->
 <div class="container">
