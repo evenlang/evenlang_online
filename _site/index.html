@@ -1,5 +1,3 @@
-<!doctype html>
-<html>
   <head>
     <meta charset="utf-8">
     <title>Welcome</title>
@@ -15,16 +13,20 @@
     <!-- Custom styles for this template -->
     <link href="/bootstrap/cover.css" rel="stylesheet">
     <link rel="icon" href="/static/img/icon.png">
-    
+
     <style>
-      body {background-image: url(/static/img/14.jpg);
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center;}
-      
-      .opacity {background-color: #10bbc4;
-        background-size: 100% 100%;
-        opacity: 0.6;}      
+    body {
+      background: none;
+    }
+    @media (min-width: 640px) {
+    }
+    html {
+      background: url(/static/img/14.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }   
     </style>
   </head>
 
@@ -34,44 +36,29 @@
 
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
-        <!--<div class="inner">
-          <h3 class="masthead-brand">Evenlang</h3>
-          <nav class="nav nav-masthead justify-content-center">
-      <a class="nav-link" href="#">Главная</a>
-            <a class="nav-link" href="#">Тексты</a>
-            <a class="nav-link" href="#">Глоссы</a>
-      <a class="nav-link" href="#">Наши статьи</a>
-            <a class="nav-link" href="#">Литература</a>
-      <a class="nav-link" href="#">О нас</a>
-            <a class="nav-link" href="#">Новости</a>
-          </nav>
-        </div>-->
-      </header
+      </header>
 
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Эвенский проект</h1>
         <p class="lead">Это сайт эвенской экспедиции. Здесь собраны тексты, наши статьи и ещё немного всякого разного.</p>
-        <p class="lead">
-          <a href="/curious" class="btn btn-lg btn-secondary">Любопытному</a>
-      <a href="/scientific" class="btn btn-lg btn-secondary">Исследователю</a>
-      <!-- <a href="#" class="btn btn-lg btn-secondary">Войти</a> -->
-        </p>
       </main>
+      <div class="container">
+        <div class="row">
+          <div class="col m-2">
+          <a href="/curious" class="btn btn-lg btn-secondary btn-block">Любопытному</a>
+          </div>
+          <div class="col m-2">
+          <a href="/scientific" class="btn btn-lg btn-secondary btn-block">Исследователю</a>
+          <!-- <a href="#" class="btn btn-lg btn-secondary">Войти</a> -->
+          </div>
+        </div>
+      </div>
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>НИУ ВШЭ, Эвеснкая экспедиция</p>
+          <p>НИУ ВШЭ, Эвенская экспедиция</p>
         </div>
       </footer>
     </div>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/bootstrap/slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="/bootstrap/jquery-slim.min.js"><\/script>')</script>
-    <script src="/bootstrap/popper.min.js"></script>
-    <script src="/bootstrap/bootstrap.min.js"></script>
   </body>
-</html>

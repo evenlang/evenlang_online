@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Главная15
+title: Главная
 pagination: 
   enabled: true
 ---
@@ -15,20 +15,21 @@ pagination:
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 d-none d-lg-block">
         <img class="rounded-circle" src="{{ post.ava }}" alt="post.ava" width="140" height="140">
       </div>
       <div class="col">
       <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
 
       <div class="date">
-        {{ post.author }} &mdash; {{ post.date | date: "%d.%m.%Y" }}
+        {{ post.date | date: "%d.%m.%Y" }}
       </div>
 
       <div class="preview">
           {{ post.lead }}
       </div>
       </div>
+    </div>
 
     <hr class="featurette-divider">
     {% else %}
@@ -38,14 +39,14 @@ pagination:
         <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
 
         <div class="date" align="right">
-          {{ post.author }} &mdash; {{ post.date | date: "%d.%m.%Y" }}
+          {{ post.date | date: "%d.%m.%Y" }}
         </div>
 
         <div class="preview">
           {{ post.lead }}
         </div>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 d-none d-lg-block">
         <img class="rounded-circle" src="{{ post.ava }}" alt="post.ava" width="140" height="140">
       </div>
     </div>
