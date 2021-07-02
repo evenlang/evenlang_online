@@ -2,31 +2,25 @@
 layout: default
 title: Галерея
 ---
-    <!-- Begin page content -->
+    <!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Фотографии из наших экспедиций</title>
+    <title>Галерея</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="/examples/vendors/bootstrap-4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- fancyBox CSS -->
+    <link href="/examples/vendors/fancybox/jquery.fancybox.min.css" rel="stylesheet">
     <style>
-        .mosaicflow__item {
-            padding: 3px;
-        }
-
-        .mosaicflow__column {
-            float: left;
-        }
-
-        .mosaicflow__item img {
-            display: block;
-            width: 100%;
-            height: auto;
-            padding: 3px;
+        img {
+            padding: 4px;
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
 
-        .mosaicflow__item img:hover {
+        img:hover {
             opacity: 0.6;
             filter: alpha(opacity=60);
         }
@@ -34,116 +28,38 @@ title: Галерея
 </head>
 <body>
 
-<main role="main" class="container">
-  <h1 class="mt-5">Галерея</h1>
-    <div id="mycontainer">
-
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/0.jpg">
-                <img class="img-responsive" src="../static/img/gallery/0.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/1.jpg">
-                <img class="img-responsive" src="../static/img/gallery/1.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/2.jpg">
-                <img class="img-responsive" src="../static/img/gallery/2.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/3.jpg">
-                <img class="img-responsive" src="../static/img/gallery/3.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/4.jpg">
-                <img class="img-responsive" src="../static/img/gallery/4.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/5.jpg">
-                <img class="img-responsive" src="../static/img/gallery/5.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/6.jpg">
-                <img class="img-responsive" src="../static/img/gallery/6.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/7.jpg">
-                <img class="img-responsive" src="../static/img/gallery/7.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/8.jpg">
-                <img class="img-responsive" src="../static/img/gallery/8.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/9.jpg">
-                <img class="img-responsive" src="../static/img/gallery/9.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/10.jpg">
-                <img class="img-responsive" src="../static/img/gallery/10.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/11.jpg">
-                <img class="img-responsive" src="../static/img/gallery/11.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/12.jpg">
-                <img class="img-responsive" src="../static/img/gallery/12.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/13.jpg">
-                <img class="img-responsive" src="../static/img/gallery/13.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/14.jpg">
-                <img class="img-responsive" src="../static/img/gallery/14.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/15.jpg">
-                <img class="img-responsive" src="../static/img/gallery/15.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/16.jpg">
-                <img class="img-responsive" src="../static/img/gallery/16.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/17.jpg">
-                <img class="img-responsive" src="../static/img/gallery/17.jpg" alt="">
-            </a>
-        </div>
-        <div class="mosaicflow__item">
-            <a data-fancybox="gallery" href="../static/img/gallery/18.jpg">
-                <img class="img-responsive" src="../static/img/gallery/18.jpg" alt="">
-            </a>
-        </div>
+<div class="container">
+    <h1 class="h4 text-center my-4">Галерея</h1>
+    <div class="grid">
+        <a data-fancybox="gallery" href="../static/img/gallery/0.jpg">
+            <img class="img-responsive" src="../static/img/gallery/0.jpg" alt="">
+        </a>
+        <a data-fancybox="gallery" href="../static/img/gallery/1.jpg">
+            <img class="img-responsive" src="../static/img/gallery/1.jpg" alt="">
+        </a>
+        <a data-fancybox="gallery" href="../static/img/gallery/2.jpg">
+            <img class="img-responsive" src="../static/img/gallery/2.jpg" alt="">
+        </a>
+        <a data-fancybox="gallery" href="../static/img/gallery/3.jpg">
+            <img class="img-responsive" src="../static/img/gallery/3.jpg" alt="">
+        </a>
     </div>
-</main>
+</div>
 
 <script>
     $(function () {
-        $('#mycontainer').mosaicflow({
-            itemSelector: '.mosaicflow__item',
-            minItemWidth: 300
-        });
+        var options = {
+            srcNode: 'img',             // grid items (class, node)
+            margin: '15px',             // margin in pixel, default: 0px
+            width: '240px',             // grid item width in pixel, default: 220px
+            max_width: '',              // dynamic gird item width if specified, (pixel)
+            resizable: true,            // re-layout if window resize
+            transition: 'all 0.5s ease' // support transition for CSS3, default: all 0.5s ease
+        };
+        $('.grid').gridify(options);
     });
 </script>
 
 </body>
-</html>
+</html>							
+						
