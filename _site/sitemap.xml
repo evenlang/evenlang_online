@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/authors/ann.html</loc>
-<lastmod>2021-07-02T22:36:09+03:00</lastmod>
+<lastmod>2021-07-02T23:07:26+03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/jill.html</loc>
-<lastmod>2021-07-02T22:36:09+03:00</lastmod>
+<lastmod>2021-07-02T23:07:26+03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/authors/ted.html</loc>
-<lastmod>2021-07-02T22:36:09+03:00</lastmod>
+<lastmod>2021-07-02T23:07:26+03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2021/04/30/%D0%AD%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B8%D0%B9-%D0%B2-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9-%D0%BB%D0%B8%D0%BD%D0%B3%D0%B2%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B5.html</loc>
@@ -18,7 +18,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/themes/seminars.html</loc>
-<lastmod>2021-07-02T22:36:09+03:00</lastmod>
+<lastmod>2021-07-02T23:07:26+03:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/scientific/about.html</loc>
