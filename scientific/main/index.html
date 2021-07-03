@@ -11,7 +11,7 @@ pagination:
   <div class="container">
     <hr class="featurette-divider">
     {% assign i = 1 %}
-    {% for post in paginator.posts reversed %}
+    {% for post in paginator.posts %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="row">

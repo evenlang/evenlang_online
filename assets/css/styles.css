@@ -74,3 +74,40 @@ h3 {
 .preview {
   color: #282828;
 }
+
+.img-background{
+position:absolute;
+margin-left:50%;
+left:-512px;
+top:0px;
+z-index:1;
+width: 100%;
+}
+
+section{
+  padding: 0 0;
+}
+
+@media (min-width: 575.98px){
+  section {
+    padding: 0 calc(50% - 350px);
+  }
+}
+
+@media (min-width: 767.98px){
+  section {
+    padding: 0 calc(50% - 390px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  section {
+    padding: 0 calc(50% - 510px);
+  }
+}
+
+@media (min-width: 1199.98px){
+  section {
+    padding: 0 calc(50% - 750px);
+  }
+}
