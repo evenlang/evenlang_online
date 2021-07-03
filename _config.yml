@@ -21,19 +21,20 @@ defaults:
       layout: "default"
 
 gems:
-  - jekyll-paginate-v2
+  - jekyll-paginate
+  - jekyll-paginate-multiple
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate-v2
+  - jekyll-paginate
 
 
-pagination:
-  enabled: true
-  per_page: 5
-  title: 'Главная'
-  limit: 0
-
-
+paginate_multiple:
+  - paginate: 5
+    paginate_path: 'scientific/main/page:num/'
+    sub_dir: '/scientific'
+  - paginate: 5
+    paginate_path: '/curious/main/page:num/'
+    sub_dir: '/curious'

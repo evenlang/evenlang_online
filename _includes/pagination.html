@@ -2,7 +2,7 @@
   {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="/scientific">&laquo;&laquo; В начало</a>
+    <a href="/scientific/main/">&laquo;&laquo; В начало</a>
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Предыдущая</a>
   {% else %}
     <span>&laquo;&laquo; В начало</span>
@@ -13,9 +13,9 @@
     {% if page == paginator.page %}
       <span class="page_number">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="/scientific">{{ page }}</a>
+      <a href="/scientific/main/">{{ page }}</a>
     {% else %}
-      <a href="/scientific/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a href="/scientific/main/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
   {% else %}
@@ -32,16 +32,16 @@
   {% if page == paginator.page %}
       <span class="page_number">{{ page }}</span>
     {% elsif page == 1 %}
-      <a href="/scientific">{{ page }}</a>
+      <a href="/scientific/main/">{{ page }}</a>
     {% else %}
-      <a href="/scientific{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a href="/scientific/main{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
   {% endif %}
 
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Следующая &raquo;</a>
-    <a href="/scientific/page{{ paginator.total_pages }}">В конец &raquo;&raquo;</a>
+    <a href="/scientific/main/page{{ paginator.total_pages }}">В конец &raquo;&raquo;</a>
   {% else %}
     <span>Следующая &raquo;</span>
     <span>В конец &raquo;&raquo;</span>
