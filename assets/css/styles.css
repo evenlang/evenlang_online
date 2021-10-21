@@ -114,13 +114,13 @@ section{
 
 @media screen and (max-width: 750px) {
   p, .preview {
-    font-size: small !important;
+    font-size: medium !important;
   }
   h1 {
     font-size: x-large !important;
   }
   h3 {
-    font-size: medium;
+    font-size: x-large;
   }
   .container{
     margin: 0;
