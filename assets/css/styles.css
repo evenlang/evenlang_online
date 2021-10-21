@@ -111,3 +111,19 @@ section{
     padding: 0 calc(50% - 600px);
   }
 }
+
+@media screen and (max-width: 750px) {
+  p, .preview {
+    font-size: small !important;
+  }
+  h1 {
+    font-size: x-large !important;
+  }
+  h3 {
+    font-size: medium;
+  }
+  .container{
+    margin: 0;
+    width: auto;
+  }
+}
