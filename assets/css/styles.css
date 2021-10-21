@@ -52,7 +52,7 @@
     margin-top: 2%;
 }
 .carousel {
-	width: 70%;
+	width: 80%;
 	margin: auto;
 }
 p {
@@ -84,46 +84,54 @@ z-index:1;
 width: 100%;
 }
 
-section{
-  padding: 0 15px;
-}
-
-@media (min-width: 575.98px){
-  section {
-    padding: 0 calc(50% - 350px);
-  }
-}
-
-@media (min-width: 767.98px){
-  section {
-    padding: 0 calc(50% - 390px);
-  }
-}
-
-@media (min-width: 991.98px) {
-  section {
-    padding: 0 calc(50% - 510px);
-  }
-}
-
-@media (min-width: 1199.98px){
-  section {
-    padding: 0 calc(50% - 600px);
-  }
-}
 
 @media screen and (max-width: 750px) {
   p, .preview {
     font-size: medium !important;
   }
-  h1 {
-    font-size: x-large !important;
-  }
-  h3 {
+  h1, h2, h3 {
     font-size: x-large;
   }
-  .container{
-    margin: 0;
-    width: auto;
+  table {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    margin: 0 !important;
+    width: auto !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    margin: 0 !important;
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .car-pad {
+    margin-top: calc(-440px + 40vw);
+  }
+}
+@media screen and (max-width: 750px) and (min-width: 575px) {
+  .car-pad {
+    margin-top: calc(-500px + 40vw);
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 750px) {
+  .car-pad {
+    margin-top: calc(-470px + 40vw);
+  }
+}
+@media screen and (max-width: 1500px) and (min-width: 900px) {
+  .car-pad {
+    margin-top: calc(-550px + 40vw);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .car-pad {
+    margin-top: 0;
   }
 }
