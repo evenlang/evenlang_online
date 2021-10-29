@@ -42,13 +42,13 @@
 #right
 {
     position: absolute; /*or fixed*/
-    right: 10%;
+    right: 8%;
     margin-top: 2%;
 }
 #left
 {
     position: absolute; /*or fixed*/
-    left: 10%;
+    left: 8%;
     margin-top: 2%;
 }
 .carousel {
@@ -89,7 +89,10 @@ width: 100%;
   p, .preview {
     font-size: medium !important;
   }
-  h1, h2, h3 {
+  h1 {
+    font-size: xx-large;
+  }
+  h2, h3 {
     font-size: x-large;
   }
   table {
@@ -105,11 +108,11 @@ width: 100%;
 }
 @media screen and (max-width: 575px) {
   .container {
-    margin: 0 !important;
+    margin: 0;
     width: auto !important;
   }
   .container-fluid {
-    margin: 0 !important;
+    margin: 0;
   }
   .mobile-bullets {
     margin-left: -1.5em;
@@ -170,4 +173,8 @@ width: 100%;
 .img-mobile {
   float: left;
   margin-bottom: 2em;
+}
+
+h1, h2, h3, h4, h5, h6, .preview {
+  text-align: left;
 }
