@@ -108,6 +108,12 @@ width: 100%;
     margin: 0 !important;
     width: auto !important;
   }
+  .container-fluid {
+    margin: 0 !important;
+  }
+  .mobile-bullets {
+    margin-left: -1.5em;
+  }
 }
 
 @media screen and (max-width: 575px) {
