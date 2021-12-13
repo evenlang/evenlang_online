@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Главная
+title: Новости
 pagination:
   enabled: true
 ---
@@ -8,8 +8,8 @@ pagination:
   <main role="main" class="container" style="margin-bottom: -4em;">
     <h1 class="mt-5 news">Новости</h1>
   </main>
-  <div class="container">
-    <hr class="featurette-divider">
+  <div class="container" style="margin-top: 8em;">
+    <!-- <hr class="featurette-divider"> -->
     {% assign i = 1 %}
     {% for post in paginator.posts %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
@@ -23,7 +23,7 @@ pagination:
       <div class="col">
       <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
 
-      <div class="container-fluid d-block d-md-none" style="margin-top: 1.2em; margin-bottom: 1.2em;">
+      <div class="d-block d-md-none" style="margin-top: 2em; margin-bottom: 1.2em;">
         <a href="{{ post.url }}">
           <img src={{ post.ava }} width="100%">
         </a>
@@ -46,7 +46,7 @@ pagination:
       <div class="col">
         <h3><a href="{{ post.url }}" style="color: #282828;">{{ post.title }}</a></h3>
 
-      <div class="container-fluid d-block d-md-none" style="margin-top: 1.2em; margin-bottom: 1.2em;">
+      <div class="d-block d-md-none" style="margin-top: 2em; margin-bottom: 1.2em;">
         <a href="{{ post.url }}">
           <img src={{ post.ava }} width="100%">
         </a>

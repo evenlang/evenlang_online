@@ -90,6 +90,8 @@ h3 {
 
 .preview {
   color: #282828;
+  font-size: large;
+  margin-top: 1em;
 }
 
 .img-background{
@@ -135,6 +137,15 @@ width: 100%;
   margin-bottom: 2em;
 }
 
+.seemore {
+    /*position: absolute;
+    bottom: -2px;*/
+    margin-left: 11px;
+    color: #7a7a78;
+    font-size: smaller;
+    text-align: left;
+}
+
 h1, h2, h3, h4, h5, h6, .preview {
   text-align: left;
 }
@@ -178,9 +189,6 @@ h1, h2, h3, h4, h5, h6, .preview {
   }
   .container-fluid {
     margin: 0;
-  }
-  .mobile-bullets {
-    margin-left: -1.5em;
   }
   .berry {
     margin-left: 0 !important;
