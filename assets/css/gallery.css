@@ -51,8 +51,8 @@
 }
 
 .mosaicflow__item img:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 /*img {
   padding: 4px;
@@ -62,8 +62,8 @@
 }*/
 
 img:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.9;
+  filter: alpha(opacity=90);
 }
 
 /* Style the Image Used to Trigger the Modal */
@@ -85,7 +85,6 @@ img:hover {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
@@ -99,22 +98,16 @@ img:hover {
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
+.caption {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
   text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+  color: white;
+  padding-top: 10px;
 }
 
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
 
 @keyframes zoom {
   from {transform:scale(0)}

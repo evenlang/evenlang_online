@@ -15,6 +15,12 @@ body {
   line-height: 1.5;
 }
 
+
+.article {
+  margin: 1.3em 0;
+}
+
+
 .mt5 {
   font-family: SourceSerifPro-Regular;
 }
@@ -80,13 +86,14 @@ h1 {
   color: #282828;
 }
 
-h3 {
+h3, h4,h5 {
   font-family: SourceSerifPro-Regular;
 }
 
 .date {
   color: #616160;
 }
+
 
 .preview {
   color: #282828;
