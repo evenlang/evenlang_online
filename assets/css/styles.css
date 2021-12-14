@@ -28,6 +28,7 @@ body {
 .navbar {
   background-color: #10bbc4 !important;
   font-family: SourceSerifPro-Bold;
+  z-index: 1;
 }
 
 .nav-link {
