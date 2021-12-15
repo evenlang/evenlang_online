@@ -30,7 +30,7 @@ footer, body {
     color: white;
 }
 
-.footer_column_title {
+.footer_column_title, .cite {
 	color: white;
 	font-size: large;
 	font-family: "SourceSerifPro-Bold";
@@ -43,7 +43,7 @@ footer, body {
 }
 
 .cite a:hover {
-  color: grey !important;
+  color: #dedede !important;
   cursor: pointer;
 }
 
@@ -71,8 +71,20 @@ footer, body {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 960px) {
+    .footer_column_text.cite {
+    display: none !important;
+    }
+    .cite.small {
+        display: block !important;
+    }
+    .cite.big {
+        display: none;
+    }
+}
+
 @media only screen and (max-width:960px) {
-    .footer_column.collapsed .footer_column_title::after {
+    .footer_column.collapsed .footer_column_title::after, .footer_column.collapsed .cite::after {
     right: 0;
     transform: rotate(0deg);
 }
@@ -90,12 +102,12 @@ footer, body {
 @media only screen and (max-width:960px) {
     .footer_column_text: :after {
     content: '\00a0'}
-}.footer_column_title {
+}.footer_column_title, .cite {
     font-weight: 800;
     position: relative;
 }
 @media only screen and (max-width:960px) {
-    .footer_column_title {
+    .footer_column_title, .cite {
     margin-bottom: 0;
     cursor: pointer;
     padding: 10px 0;
@@ -108,7 +120,15 @@ footer, body {
     transform: rotate(45deg);
     transform-origin: center;
     transition: all .3s ease;
-    /*font-size: 16px;*/
+}
+.cite::after {
+    position: absolute;
+    right: 0;
+    content: '';
+    font-weight: 400;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: all .3s ease;
 }
 }.footer_column input {
     background-color: #fff;
