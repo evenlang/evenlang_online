@@ -2,7 +2,7 @@ var data = document.getElementById("aux");
 var captions = JSON.parse(data.getAttribute('captions'));
 var total = data.getAttribute('total');
 
-for (var i = parseInt(total); i > 0; i--) {
+for (var i = parseInt(total); i >= 0; i--) {
    var template = document.getElementById('to_copy').cloneNode(true);
 
 	template.style.display = "block";
