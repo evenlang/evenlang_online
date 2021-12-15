@@ -11,13 +11,17 @@
   src: url(/static/fonts/SourceSerifPro-Regular.ttf) format("truetype");
 }
 
+main {
+    min-height: calc(100vh - 299px) !important;
+}
+
 footer, body {
     margin-bottom: 0;
     padding-bottom: 0;
     border: 0;
     vertical-align: baseline;
-    bottom: 0;
 }
+
 
 .footer {
     background-color: #222;
