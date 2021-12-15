@@ -106,7 +106,11 @@
 <link rel="stylesheet" href="/assets/css/gallery.css">
 <!-- <link rel="stylesheet" media="all" href="/assets/css/jquery.fancybox.min.css"/> -->
 <script src="/assets/js/app.js"></script>
+{% if page.title == "Галерея" %}
+<script src="/assets/js/gallery.js"></script>
+{% else %}
 <script src="/assets/js/modal.js"></script>
+{% endif %}
 
 
   </body>
