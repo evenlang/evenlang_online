@@ -22,12 +22,6 @@ footer, body {
     vertical-align: baseline;
 }
 
-
-.footer {
-    background-color: #222;
-    color: #fff;
-}
-
 .footer_columns {
     display: flex;
     justify-content: space-between;
@@ -49,7 +43,7 @@ footer, body {
 }
 
 .footer_column_text a:hover {
-  color: white !important;
+  color: grey !important;
   cursor: pointer;
 }
 
