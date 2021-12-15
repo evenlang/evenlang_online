@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6, .preview {
 
 
 @media screen and (max-width: 750px) {
-  p, .preview {
+  p, .preview, .lead {
     font-size: medium !important;
   }
   h1 {
