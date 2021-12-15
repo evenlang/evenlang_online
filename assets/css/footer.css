@@ -42,7 +42,7 @@ footer, body {
 	font-weight: 400;
 }
 
-.footer_column_text a:hover {
+.cite a:hover {
   color: grey !important;
   cursor: pointer;
 }
