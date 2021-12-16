@@ -21,5 +21,6 @@ group :jekyll_plugins do
   gem 'jekyll-seo-tag'
   gem "jekyll-paginate", "~> 1.1.0"
   gem "jekyll-paginate-multiple", "~> 0.1.0"
+  gem "jekyll-redirect-from"
 end
 
