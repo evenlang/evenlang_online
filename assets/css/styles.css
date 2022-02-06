@@ -232,3 +232,7 @@ h1, h2, h3, h4, h5, h6, .preview {
   }
 }
 
+.dropdown-menu a:hover {
+  background-color: #10bbc4 !important;
+  text-decoration: underline;
+}
