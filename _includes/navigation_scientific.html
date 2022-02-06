@@ -15,16 +15,16 @@
       {% if tit[0] == "тексты" %}
       <li class="nav-item">
         <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: inherit !important;border: 0;">
+          <a class="btn btn-secondary dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: inherit !important;border: 0;text-align: left;">
             тексты
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">тексты (устные и письменные)</a>
-            <a class="dropdown-item" href="#">газета</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: inherit !important;border: 0;">
+            <a class="dropdown-item" style="color: white !important;" href="#">тексты (устные и письменные)</a>
+            <a class="dropdown-item" style="color: white !important;" href="#">газета</a>
           </div>
         </div>
       </li>
-      {% else if tit[0] == page.title %}
+      {% elsif tit[0] == page.title %}
 			<li class="nav-item">
               <a class="nav-link" href="#">{{ tit[0] }}</a>
             </li>
