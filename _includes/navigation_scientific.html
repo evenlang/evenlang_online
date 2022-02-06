@@ -12,7 +12,19 @@
       {% assign titles = "новости~/scientific/main, поле~/scientific/field, о нас~/scientific/about, тексты~/scientific/texts, материалы~/scientific/materials, публикации~/scientific/articles, галерея~/scientific/gallery, благодарности~/scientific/acknowledgments, " | split: ", " %}
 			{% for title in titles %}
       {% assign tit = title | split: "~" %}
-      {% if tit[0] == page.title %}
+      {% if tit[0] == "тексты" %}
+      <li class="nav-item">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            тексты
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">тексты (устные и письменные)</a>
+            <a class="dropdown-item" href="#">газета</a>
+          </div>
+        </div>
+      </li>
+      {% else if tit[0] == page.title %}
 			<li class="nav-item">
               <a class="nav-link" href="#">{{ tit[0] }}</a>
             </li>
