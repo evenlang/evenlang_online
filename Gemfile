@@ -15,7 +15,7 @@ gem "minima", "~> 2.5"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 
-gem "sassc", "~> 2.1.0"
+gem "sassc", "~> 2.4.0"
 
 
 group :jekyll_plugins do
