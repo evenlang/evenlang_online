@@ -34,5 +34,5 @@ plugins:
 
 paginate_multiple:
   - paginate: 5
-    paginate_path: '/scientific/main/page:num/'
-    sub_dir: '/scientific'
+    paginate_path: '/evenlang_online/scientific/main/page:num/'
+    sub_dir: '/evenlang_online/scientific'

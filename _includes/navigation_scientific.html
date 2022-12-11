@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
          <ul class="navbar-nav mr-auto">
-      {% assign titles = "новости~/scientific/main, поле~/scientific/field, о нас~/scientific/about, тексты~/scientific/texts, материалы~/scientific/materials, публикации~/scientific/articles, галерея~/scientific/gallery, благодарности~/scientific/acknowledgments, " | split: ", " %}
+      {% assign titles = "новости~/evenlang_online/scientific/main, поле~/evenlang_online/scientific/field, о нас~/evenlang_online/scientific/about, тексты~/evenlang_online/scientific/texts, материалы~/evenlang_online/scientific/materials, публикации~/evenlang_online/scientific/articles, галерея~/evenlang_online/scientific/gallery, благодарности~/evenlang_online/scientific/acknowledgments, " | split: ", " %}
 			{% for title in titles %}
       {% assign tit = title | split: "~" %}
       {% if tit[0] == "тексты" %}
