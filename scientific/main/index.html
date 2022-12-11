@@ -13,7 +13,7 @@ redirect_from:
     <div style="margin-top: 8em;">
     <!-- <hr class="featurette-divider"> -->
     {% assign i = 1 %}
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
     {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="row">
