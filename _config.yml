@@ -31,8 +31,10 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
+paginate: 5
+paginate_path: '/evenlang_online/scientific/main/page:num/'
 
-paginate_multiple:
-  - paginate: 5
-    paginate_path: '/scientific/main/page:num/'
-    sub_dir: '/scientific'
+# paginate_multiple:
+#   - paginate: 5
+#     paginate_path: '/evenlang_online/scientific/main/page:num/'
+#     sub_dir: '/scientific'

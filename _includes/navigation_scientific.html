@@ -1,15 +1,15 @@
 <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <a href="/" class="berry">
-          <img src="/static/img/logo.png" width="60%">
+        <a href="/evenlang_online/scientific/main/" class="berry">
+          <img src="/evenlang_online/static/img/logo.png" width="60%">
         </a>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
          <ul class="navbar-nav mr-auto">
-      {% assign titles = "новости~/scientific/main, поле~/scientific/field, о нас~/scientific/about, тексты~/scientific/texts, материалы~/scientific/materials, публикации~/scientific/articles, галерея~/scientific/gallery, благодарности~/scientific/acknowledgments, " | split: ", " %}
+      {% assign titles = "новости~/evenlang_online/scientific/main, поле~/evenlang_online/scientific/field, о нас~/evenlang_online/scientific/about, тексты~/evenlang_online/scientific/texts, материалы~/evenlang_online/scientific/materials, публикации~/evenlang_online/scientific/articles, галерея~/evenlang_online/scientific/gallery, благодарности~/evenlang_online/scientific/acknowledgments, " | split: ", " %}
 			{% for title in titles %}
       {% assign tit = title | split: "~" %}
       {% if tit[0] == "тексты" %}
@@ -19,8 +19,8 @@
             тексты
           </a>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="background-color: #10bbc4 !important;border: 0;">
-            <a class="dropdown-item" style="color: white !important;" href="/scientific/texts">тексты (устные и письменные)</a>
-            <a class="dropdown-item" style="color: white !important;" href="/scientific/texts_newspaper">газета</a>
+            <a class="dropdown-item" style="color: white !important;" href="/evenlang_online/scientific/texts">тексты (устные и письменные)</a>
+            <a class="dropdown-item" style="color: white !important;" href="/evenlang_online/scientific/texts_newspaper">газета</a>
           </div>
         </div>
       </li>
