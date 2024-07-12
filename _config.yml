@@ -20,6 +20,9 @@ defaults:
     values:
       layout: "default"
 
+slug:
+  mode: raw
+
 gems:
   - jekyll-paginate
   - jekyll-paginate-multiple
